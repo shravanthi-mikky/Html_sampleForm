@@ -10,6 +10,19 @@ text.addEventListener('input',function(){
         errorMsg.textContent="Given name is Invalid";
     }
 })
+//validation for email
+const emailSample=document.getElementById('email');
+let errorMsgForEmail=document.querySelector(".errorMsg");
+text.addEventListener('input',function(){
+    let regexSample=RegExp('^[A-Za-z0-9](.[a-z0-9])@[a-z].[a-z]{2,4}(.[a-z]{2,4})$');
+    if(regexSample.test(emailSample.value)){
+        errorMsgForEmail.textContent="";
+    }
+    else
+    {
+        errorMsgForEmail.textContent="Given email is Invalid";
+    }
+})
 function validate(){
     var phoneNumber = document.getElementById('contact').value;
     var  name= document.getElementById('name').value;
