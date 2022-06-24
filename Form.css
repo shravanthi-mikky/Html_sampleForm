@@ -1,0 +1,47 @@
+.Header{
+    padding:20px;
+    text-align: center;
+    background-color: crimson;
+    margin:0px;
+}
+.mainContainer{
+    border-style: outset;
+    margin:20px;
+    text-align: center;
+    background: pink;
+}
+footer{
+    padding:20px;
+    text-align: center;
+    background-color: grey;
+    margin:0px;
+}
+input{
+    width: 40%;
+    padding:10px;
+    margin:10px;
+    border-radius: 6px;
+    border-style:outset;
+}
+label{
+    padding:10px; 
+}
+form{
+    text-align: center;
+}
+.endButton{
+    height: 50px;
+    padding:20px;
+
+}
+button{
+    background-color: rgb(4, 125, 4);
+    padding:10px 20px 10px 20px;
+    border:rgb(1, 41, 1);
+    border-radius:8px;
+}
+button:hover{
+    transform:scale(1.1);
+    transition: transform 0.4s ease;
+    background-color: rgb(22, 251, 22);
+}

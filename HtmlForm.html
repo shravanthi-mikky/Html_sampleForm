@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sample-Form</title>
+        <h1 class="Header">HTML 5 Input Form Fields</h1>
+        <link rel="stylesheet" href="Form.css">
+    </head>
+    <body>
+        <div class="mainContainer">
+            <form>
+                <div id="name">
+                    <label for="text">Full Name : </label>
+                    <input type="text" name="Full Name" placeholder="First letter Capital">
+                    <error-output class="errorMsg" for="text"></error-output>
+                </div>
+                <div id="password">
+                    <label for="password">Password : </label>
+                    <input type="password" name="Password" placeholder="Password">
+                </div>
+                <div id="email">
+                    <label for="email">Email : </label>
+                    <input type="email" name="email" placeholder="Enter your Email">
+                </div>
+                <div id="contact">
+                    <label for="number">Contact : </label>
+                    <input type="number" name="number" placeholder="Enter your Phone Number">
+                </div>
+                <div id="company">
+                    <label for="text">Company : </label>
+                    <input type="text" name="text" placeholder="Enter company you are currently working">
+                </div>
+                <div id="jobrole">
+                    <label for="text">Job role : </label>
+                    <input type="text" name="text" placeholder="Enter your Job Role">
+                </div>
+                <div id="date">
+                    <label for="date">Joining Date : </label>
+                    <input type="date" name="date" >
+                </div>
+                <div id="salary">
+                    <label for="range">Salary : </label>
+                    <input type="range" name="salary" min="20000" max="100000" value="60000" >
+                    <output for="salary">100000</output>
+                </div>  
+                <div class="endButton">
+                    <button type="submit">submit</button>
+                </div>               
+            </form>
+        </div>
+        <div>
+            <footer>Footer</footer>
+        </div>
+        <script src="formValidation.js"></script>
+    </body>
+</html>
