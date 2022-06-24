@@ -17,7 +17,18 @@ function validate(){
     var regexSample=RegExp('^[A-Z]{1}[a-z]{2,}$');
     var phoneResult = phoneRGEX.test(phoneNumber);
     var nameResult = regexSample.test(name);
-    alert("phone:"+phoneResult + "name :"+nameResult);
-    
-    return false;
+    //alert("phone:"+phoneResult + "name :"+nameResult);
+    if(phoneResult == false)
+    {
+        alert('Please enter a valid phone number');
+        return false;
+    }
+
+    if(nameResult == false)
+    {
+        alert('Please enter a valid name');
+        return false;
+    }
+
+    return true;
   }
