@@ -12,8 +12,8 @@ text.addEventListener('input',function(){
 })
 //validation for email
 const emailSample=document.getElementById('email');
-let errorMsgForEmail=document.querySelector(".errorMsg");
-text.addEventListener('input',function(){
+let errorMsgForEmail=document.querySelector(".errorMsgEmail");
+emailSample.addEventListener('input',function(){
     let regexSample=RegExp('^[A-Za-z0-9](.[a-z0-9])@[a-z].[a-z]{2,4}(.[a-z]{2,4})$');
     if(regexSample.test(emailSample.value)){
         errorMsgForEmail.textContent="";
@@ -23,6 +23,20 @@ text.addEventListener('input',function(){
         errorMsgForEmail.textContent="Given email is Invalid";
     }
 })
+//validation for phone
+const phoneSample=document.getElementById('contact');
+let errorMsgForphone=document.querySelector(".errorMsgPhone");
+phoneSample.addEventListener('input',function(){
+    let regexSample=RegExp('^[0-9]{2}\\s[6-9]{1}[0-9]{9}$');
+    if(regexSample.test(phoneSample.value)){
+        errorMsgForphone.textContent="";
+    }
+    else
+    {
+        errorMsgForphone.textContent="Given phone Number is Invalid";
+    }
+})
+/*
 function validate(){
     var phoneNumber = document.getElementById('contact').value;
     var  name= document.getElementById('name').value;
@@ -45,3 +59,4 @@ function validate(){
 
     return true;
   }
+  */
