@@ -36,7 +36,8 @@ phoneSample.addEventListener('input',function(){
         errorMsgForphone.textContent="Given phone Number is Invalid";
     }
 })
-//validation for Password
+/*
+//validation for Password rule-1 uc4
 const passwordSample=document.getElementById('password');
 let errorMsgForPassword=document.querySelector(".errorMsgPassword");
 passwordSample.addEventListener('input',function(){
@@ -47,6 +48,19 @@ passwordSample.addEventListener('input',function(){
     else
     {
         errorMsgForPassword.textContent="Password is Invalid";
+    }
+})
+*/
+const passwordSample2=document.getElementById('password');
+let errorMsgForPassword2=document.querySelector(".errorMsgPassword");
+passwordSample2.addEventListener('input',function(){
+    let regexSample=RegExp('^(?=.*[@#$%0-9A-Z])[@#$%0-9a-zA-Z]{8,}$');
+    if(regexSample.test(passwordSample2.value)){
+        errorMsgForPassword2.textContent="";
+    }
+    else
+    {
+        errorMsgForPassword2.textContent="Password is Invalid";
     }
 })
 /*
