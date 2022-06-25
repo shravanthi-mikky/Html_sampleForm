@@ -36,6 +36,19 @@ phoneSample.addEventListener('input',function(){
         errorMsgForphone.textContent="Given phone Number is Invalid";
     }
 })
+//validation for Password
+const passwordSample=document.getElementById('password');
+let errorMsgForPassword=document.querySelector(".errorMsgPassword");
+passwordSample.addEventListener('input',function(){
+    let regexSample=RegExp('^[a-zA-Z]{8,}$');
+    if(regexSample.test(passwordSample.value)){
+        errorMsgForPassword.textContent="";
+    }
+    else
+    {
+        errorMsgForPassword.textContent="Password is Invalid";
+    }
+})
 /*
 function validate(){
     var phoneNumber = document.getElementById('contact').value;
