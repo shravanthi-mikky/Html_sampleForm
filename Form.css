@@ -6,9 +6,11 @@
 }
 .mainContainer{
     border-style: outset;
-    margin:20px;
-    text-align: center;
+    margin:20px 80px;
+    padding:60px;
+    text-align: right;
     background: pink;
+    width:80%;
 }
 footer{
     padding:20px;
@@ -17,7 +19,7 @@ footer{
     margin:0px;
 }
 input{
-    width: 40%;
+    width: 80%;
     padding:10px;
     margin:10px;
     border-radius: 6px;
@@ -27,21 +29,25 @@ label{
     padding:10px; 
 }
 form{
-    text-align: center;
+    text-align: right;
 }
 .endButton{
     height: 50px;
     padding:20px;
+    text-align: center;
+}
 
+button:hover{
+    transform:scale(1.1);
+    transition: transform 0.4s ease;
+    background-color: rgb(22, 251, 22);
+}
+label{
+    text-align: right;
 }
 button{
     background-color: rgb(4, 125, 4);
     padding:10px 20px 10px 20px;
     border:rgb(1, 41, 1);
     border-radius:8px;
-}
-button:hover{
-    transform:scale(1.1);
-    transition: transform 0.4s ease;
-    background-color: rgb(22, 251, 22);
 }
